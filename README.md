@@ -7,3 +7,5 @@ Docker command to install kibana:
 
 docker pull docker.elastic.co/kibana/kibana:7.11.2  
 docker run --link YOUR_ELASTICSEARCH_CONTAINER_NAME_OR_ID:elasticsearch -p 5601:5601 docker.elastic.co/kibana/kibana:7.11.2
+
+https://www.youtube.com/watch?v=9tkrDqMbFMg
