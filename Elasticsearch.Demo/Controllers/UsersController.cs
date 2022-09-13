@@ -42,7 +42,7 @@ namespace Elasticsearch.Demo.Controllers
         [HttpPost]
         public async Task<string> Post([FromBody] User value)
         {
-            var response = await elasticClient.IndexAsync(value, x => x.Index("users"));
+            var response = await elasticClient.IndexAsync<User>(value, x => x.Index("users"));
             return response.Id;
         }
 
